@@ -1,5 +1,7 @@
 # 📘 Quera Solutions
-<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/90ea6b43-95fd-4440-9a35-94959ec1deef" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/90ea6b43-95fd-4440-9a35-94959ec1deef" width="200" height="200" alt="Logo" />
+</p>
 
 این ریپازیتوری شامل پاسخ‌ها و کدهای من برای سوالات پلتفرم **کوئرا (Quera)** است.  
 هدف از این پروژه، تمرین حل مسائل برنامه‌نویسی، بهبود مهارت الگوریتمی و اشتراک تجربه با سایر علاقه‌مندان است.  
