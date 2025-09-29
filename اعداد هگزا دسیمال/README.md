@@ -5,10 +5,14 @@ On a beautiful summer morning, a terrible incident occurred in the central proce
 However, his plan failed. The reason was simple: Hexadecimal only understood numbers written in base 2. That is, if a number in decimal representation contained any digit other than 0 or 1, it could not be stored in memory.
 
 Now, Megabyte wants to know how many numbers were successfully loaded into memory.
+
 -----------------------------------------------------------------------
+
 Input: The input consists of a single integer n.
 Outpu: Print a single integer — the number of successfully loaded numbers.
+
 -----------------------------------------------------------------------
+
 Example :
 input: 10 --------->>>> output: 2
 
