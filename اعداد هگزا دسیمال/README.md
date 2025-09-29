@@ -9,7 +9,8 @@ Now, Megabyte wants to know how many numbers were successfully loaded into memor
 -----------------------------------------------------------------------
 
 Input: The input consists of a single integer n.
-Outpu: Print a single integer — the number of successfully loaded numbers.
+
+Output: Print a single integer — the number of successfully loaded numbers.
 
 -----------------------------------------------------------------------
 
