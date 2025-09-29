@@ -11,3 +11,15 @@
 - زبان مورد استفاده: **Python** 🐍 .
 
 ---
+
+This repository contains my solutions and code for problems from the **Quera** platform.  
+The purpose of this project is to practice problem-solving, improve algorithmic skills, and share experiences with other enthusiasts.  
+
+---
+
+## 📂 Project Structure
+- Each folder or file corresponds to a specific Quera problem.  
+- File and folder names are based on the problem titles.  
+- Programming language used: **Python** 🐍.  
+
+---
