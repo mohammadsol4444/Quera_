@@ -1,14 +1,10 @@
 # ✅ Problem Statement
 
-Milad and Majid are building a long binary string consisting of 0s and 1s.
+On a beautiful summer morning, a terrible incident occurred in the central processor. A sneaky virus called Megabyte somehow gained access to the memory of his sister, Hexadecimal (who was no less sneaky than him). In order to gain full control over his sister, he tried to load n distinct natural numbers from 1 to n.
 
-    The string is constructed in the following way:
-    
-    In the first step, Milad writes the digit 1, so the string becomes 1.
-    
-    Then in each subsequent turn, the current player takes the string built so far, inverts all bits (i.e., changes every 1 to 0 and every 0 to 1), and appends this inverted string to the end of the current string.
-    
-    The next turn goes to the other player, and this process continues infinitely.
+However, his plan failed. The reason was simple: Hexadecimal only understood numbers written in base 2. That is, if a number in decimal representation contained any digit other than 0 or 1, it could not be stored in memory.
+
+Now, Megabyte wants to know how many numbers were successfully loaded into memory.
 
 For example, the first five steps of the game are as follows:
 
