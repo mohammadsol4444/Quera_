@@ -12,7 +12,7 @@
 
 ---
 
-This repository contains my solutions and code for problems from the **Quera** platform.  
+This repository contains my solutions and codes for problems from the **Quera** platform.  
 The purpose of this project is to practice problem-solving, improve algorithmic skills, and share experiences with other enthusiasts.  
 
 ---
