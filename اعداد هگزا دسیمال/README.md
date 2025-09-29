@@ -21,10 +21,21 @@ input: 10 --------->>>> output: 2
 # ✅ Solution (Python)
 
 ```python
-def solve():
-    L, R = map(int, input().split())
-    s = "1"
-    while len(s) < R:
-        s += ''.join('0' if c == '1' else '1' for c in s)
-    print(s[L-1:R])
+def countBinaries(N):
+	powersOfTwo = [0] * 11
+	powersOfTwo[0] = 1
+	for i in range(1, 11):
+		powersOfTwo[i] = powersOfTwo[i - 1] * 2
+	ctr = 1
+	ans = 0
+	while (N > 0):
+		if (N % 10 == 1):
+			ans += powersOfTwo[ctr - 1]
+		elif (N % 10 > 1):
+			ans = powersOfTwo[ctr] - 1
+		ctr += 1
+		N = N // 10
+	return ans
+N = int(input())
+print(countBinaries(N))
 
