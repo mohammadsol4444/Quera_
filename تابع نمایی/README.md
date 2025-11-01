@@ -2,46 +2,8 @@
 
 Write a program that calculates the value of eˣ using the following series expansion (up to three decimal places):
 
-𝑒
-𝑥
-=
-1
-+
-𝑥
-1
-!
-+
-𝑥
-2
-2
-!
-+
-𝑥
-3
-3
-!
-+
-…
-e
-x
-=1+
-1!
-x
-	​
+e^x = 1 + x/1! + x^2/2! + x^3/3! + ... + x^n/n!
 
-+
-2!
-x
-2
-	​
-
-+
-3!
-x
-3
-	​
-
-+…
 
 The program receives two numbers — x (the exponent) and n (the number of terms in the series).
 You must compute the sum of the first n terms of this series and print the result rounded to three decimal places.
