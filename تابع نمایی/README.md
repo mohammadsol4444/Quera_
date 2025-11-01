@@ -1,41 +1,113 @@
-# ✅ Problem Statement
+✅ Problem Statement
 
-On a beautiful summer morning, a terrible incident occurred in the central processor. A sneaky virus called Megabyte somehow gained access to the memory of his sister, Hexadecimal (who was no less sneaky than him). In order to gain full control over his sister, he tried to load n distinct natural numbers from 1 to n.
+Write a program that calculates the value of eˣ using the following series expansion (up to three decimal places):
 
-However, his plan failed. The reason was simple: Hexadecimal only understood numbers written in base 2. That is, if a number in decimal representation contained any digit other than 0 or 1, it could not be stored in memory.
+𝑒
+𝑥
+=
+1
++
+𝑥
+1
+!
++
+𝑥
+2
+2
+!
++
+𝑥
+3
+3
+!
++
+…
+e
+x
+=1+
+1!
+x
+	​
 
-Now, Megabyte wants to know how many numbers were successfully loaded into memory.
++
+2!
+x
+2
+	​
 
------------------------------------------------------------------------
++
+3!
+x
+3
+	​
 
-Input: The input consists of a single integer n.
++…
 
-Output: Print a single integer — the number of successfully loaded numbers.
+The program receives two numbers — x (the exponent) and n (the number of terms in the series).
+You must compute the sum of the first n terms of this series and print the result rounded to three decimal places.
 
------------------------------------------------------------------------
+⏱ Time Limit
 
-Example :
-input: 10 --------->>>> output: 2
+1 second
+
+💾 Memory Limit
+
+128 MB
+
+🧩 Input
+
+The first line contains a real number x.
+
+The second line contains an integer n.
+
+Constraints:
+
+0
+≤
+𝑥
+,
+𝑛
+≤
+1000
+0≤x,n≤1000
+💡 Output
+
+Print the value of eˣ, calculated up to three decimal places.
+
+🧮 Example 1
+
+Input:
+
+5
+10
 
 
-# ✅ Solution (Python)
+Output:
 
-```python
-def countBinaries(N):
-	powersOfTwo = [0] * 11
-	powersOfTwo[0] = 1
-	for i in range(1, 11):
-		powersOfTwo[i] = powersOfTwo[i - 1] * 2
-	ctr = 1
-	ans = 0
-	while (N > 0):
-		if (N % 10 == 1):
-			ans += powersOfTwo[ctr - 1]
-		elif (N % 10 > 1):
-			ans = powersOfTwo[ctr] - 1
-		ctr += 1
-		N = N // 10
-	return ans
-N = int(input())
-print(countBinaries(N))
+143.689
 
+🧮 Example 2
+
+Input:
+
+3
+15
+
+
+Output:
+
+20.086
+
+✅ Solution (Python)
+x = float(input())
+n = int(input())
+
+ex = 0
+loop_element = 1
+
+for i in range(1, n + 1):
+    ex += loop_element
+    loop_element = loop_element * (x / i)
+
+ex = round(ex, 3)
+print(f"{ex:.3f}")
